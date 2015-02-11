@@ -13,6 +13,7 @@
 		B82F18E01A8B26D00041D5E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82F18DF1A8B26D00041D5E6 /* Images.xcassets */; };
 		B82F18E31A8B26D00041D5E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82F18E11A8B26D00041D5E6 /* LaunchScreen.xib */; };
 		B82F18EF1A8B26D00041D5E6 /* Hu_CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18EE1A8B26D00041D5E6 /* Hu_CarouselTests.swift */; };
+		B82F18F91A8B281A0041D5E6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18F81A8B281A0041D5E6 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B82F18E81A8B26D00041D5E6 /* Hu-CarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hu-CarouselTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82F18ED1A8B26D00041D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82F18EE1A8B26D00041D5E6 /* Hu_CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hu_CarouselTests.swift; sourceTree = "<group>"; };
+		B82F18F81A8B281A0041D5E6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				B82F18D81A8B26D00041D5E6 /* AppDelegate.swift */,
+				B82F18F81A8B281A0041D5E6 /* Common.swift */,
 				B82F18DA1A8B26D00041D5E6 /* ViewController.swift */,
 				B82F18DC1A8B26D00041D5E6 /* Main.storyboard */,
 				B82F18DF1A8B26D00041D5E6 /* Images.xcassets */,
+				B82F18FA1A8B28270041D5E6 /* ViewControllers */,
 				B82F18E11A8B26D00041D5E6 /* LaunchScreen.xib */,
 				B82F18D61A8B26D00041D5E6 /* Supporting Files */,
 			);
@@ -110,6 +114,13 @@
 				B82F18ED1A8B26D00041D5E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B82F18FA1A8B28270041D5E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B82F18DB1A8B26D00041D5E6 /* ViewController.swift in Sources */,
+				B82F18F91A8B281A0041D5E6 /* Common.swift in Sources */,
 				B82F18D91A8B26D00041D5E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
