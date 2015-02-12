@@ -15,6 +15,7 @@
 		B82F18EF1A8B26D00041D5E6 /* Hu_CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18EE1A8B26D00041D5E6 /* Hu_CarouselTests.swift */; };
 		B82F18F91A8B281A0041D5E6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18F81A8B281A0041D5E6 /* Common.swift */; };
 		B82F18FC1A8B29120041D5E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18FB1A8B29120041D5E6 /* IntroViewController.swift */; };
+		B82F18FE1A8C82890041D5E6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18FD1A8C82890041D5E6 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B82F18EE1A8B26D00041D5E6 /* Hu_CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hu_CarouselTests.swift; sourceTree = "<group>"; };
 		B82F18F81A8B281A0041D5E6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B82F18FB1A8B29120041D5E6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = "../../../../CodePath/Week2_Carousel/Hu-Carousel/Hu-Carousel/IntroViewController.swift"; sourceTree = "<group>"; };
+		B82F18FD1A8C82890041D5E6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B82F18FB1A8B29120041D5E6 /* IntroViewController.swift */,
+				B82F18FD1A8C82890041D5E6 /* SignInViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				B82F18DB1A8B26D00041D5E6 /* ViewController.swift in Sources */,
 				B82F18F91A8B281A0041D5E6 /* Common.swift in Sources */,
 				B82F18D91A8B26D00041D5E6 /* AppDelegate.swift in Sources */,
+				B82F18FE1A8C82890041D5E6 /* SignInViewController.swift in Sources */,
 				B82F18FC1A8B29120041D5E6 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +425,7 @@
 				B82F18F41A8B26D00041D5E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B82F18F51A8B26D00041D5E6 /* Build configuration list for PBXNativeTarget "Hu-CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				B82F18F71A8B26D00041D5E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
