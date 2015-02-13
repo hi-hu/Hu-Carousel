@@ -44,19 +44,39 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
     // show alert view
     @IBAction func signInDidPress(sender: AnyObject) {
 
-        if(emailField.text == "" || passwordField.text == "") {
+        if(emailField.text == "") {
+
             var alertView = UIAlertView(
-                title: "Email and Password Required",
-                message: "Please enter your email or password",
+                title: "Email Required",
+                message: "Please enter your email",
                 delegate: self,
                 cancelButtonTitle: "OK"
             )
-        alertView.show()
-        } else if(emailField.text == "mike@test.com" && passwordField.text == "123456") {
-            // successful signin
-            // show load animation
+            alertView.show()
+            
+        } else if(passwordField.text == "") {
+            
+            var alertView = UIAlertView(
+                title: "Password Required",
+                message: "Please enter your password",
+                delegate: self,
+                cancelButtonTitle: "OK"
+            )
+            alertView.show()
+
         } else {
-            // display incorrect login message
+            var alertView = UIAlertView(
+                title: "Signing in…",
+                message: nil,
+                delegate: self,
+                cancelButtonTitle: nil
+            )
+            alertView.show()
+
+            delay(2) {
+                alertView.dismissWithClickedButtonIndex(0, animated: true)
+                self.checkPassword()
+            }
         }
     }
 
@@ -109,6 +129,32 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
         isKeyboardUp = false
     }
     
+    // delay method
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
+    func checkPassword() {
+        if(emailField.text == "mike@test.com" && passwordField.text == "123456") {
+            
+            // successful signin
+            self.performSegueWithIdentifier("loginSegue", sender: self)
+            
+        } else {
+            var alertView = UIAlertView(
+                title: "Sign In Failed",
+                message: "Invalid email or password",
+                delegate: self,
+                cancelButtonTitle: "OK"
+            )
+            alertView.show()
+        }
+    }
     
     /*
     // MARK: - Navigation

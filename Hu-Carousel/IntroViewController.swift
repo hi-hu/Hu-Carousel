@@ -24,9 +24,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
-//        println(introScrollView.contentSize)
-
         
         introScrollView.delegate = self
                 
