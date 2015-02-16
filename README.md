@@ -4,7 +4,7 @@
 - Hours: 10+
 - Status: All required stories and optionals
 
-![GIF Walkthrough](/assets/hu-carousel-overview.gif)
+![GIF Walkthrough](/_assets/hu-carousel-overview.gif)
 
 
 #### Requirements
