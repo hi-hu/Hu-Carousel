@@ -29,12 +29,14 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
+        // animate the fields after view load
         UIView.animateWithDuration(0.6, animations: {
             self.loginContainer.transform = CGAffineTransformMakeScale(0.4, 0.4)
             self.loginContainer.alpha = 1
             self.loginContainer.transform = CGAffineTransformMakeScale(1, 1)
         })
         
+        // configure gesture recognition for swipe down
         var swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
         swipe.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipe)
@@ -136,16 +138,6 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
             
             }, completion: nil)
         isKeyboardUp = false
-    }
-    
-    // delay method
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
     }
     
     func checkPassword() {
