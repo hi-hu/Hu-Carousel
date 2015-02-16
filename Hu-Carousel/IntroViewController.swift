@@ -26,7 +26,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
         
         introScrollView.delegate = self
-                
         introScrollView.contentSize = introImage.frame.size
         
         tile1.center.x = 20

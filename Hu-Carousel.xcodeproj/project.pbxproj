@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B819A4261A9194E300130E53 /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819A4251A9194E300130E53 /* CheckListViewController.swift */; };
+		B81A5B041A9166CF000301FA /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A5B031A9166CF000301FA /* FullScreenPhotoViewController.swift */; };
 		B82F18D91A8B26D00041D5E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18D81A8B26D00041D5E6 /* AppDelegate.swift */; };
 		B82F18DB1A8B26D00041D5E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18DA1A8B26D00041D5E6 /* ViewController.swift */; };
 		B82F18DE1A8B26D00041D5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82F18DC1A8B26D00041D5E6 /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 		B82F18F91A8B281A0041D5E6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18F81A8B281A0041D5E6 /* Common.swift */; };
 		B82F18FC1A8B29120041D5E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18FB1A8B29120041D5E6 /* IntroViewController.swift */; };
 		B82F18FE1A8C82890041D5E6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F18FD1A8C82890041D5E6 /* SignInViewController.swift */; };
+		B888DD8D1A8EBC6E0078830A /* FeedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888DD8C1A8EBC6E0078830A /* FeedScrollViewController.swift */; };
+		B888DD8F1A8EC0200078830A /* SettingsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888DD8E1A8EC0200078830A /* SettingsScrollViewController.swift */; };
+		B888DD911A8EC4E40078830A /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888DD901A8EC4E40078830A /* ConversationsViewController.swift */; };
 		B8AB7BD91A8DE469000B52A3 /* TourScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB7BD81A8DE469000B52A3 /* TourScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B819A4251A9194E300130E53 /* CheckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
+		B81A5B031A9166CF000301FA /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
 		B82F18D31A8B26D00041D5E6 /* Hu-Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hu-Carousel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82F18D71A8B26D00041D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82F18D81A8B26D00041D5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +50,9 @@
 		B82F18F81A8B281A0041D5E6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B82F18FB1A8B29120041D5E6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = "../../../../CodePath/Week2_Carousel/Hu-Carousel/Hu-Carousel/IntroViewController.swift"; sourceTree = "<group>"; };
 		B82F18FD1A8C82890041D5E6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B888DD8C1A8EBC6E0078830A /* FeedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedScrollViewController.swift; sourceTree = "<group>"; };
+		B888DD8E1A8EC0200078830A /* SettingsScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScrollViewController.swift; sourceTree = "<group>"; };
+		B888DD901A8EC4E40078830A /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		B8AB7BD81A8DE469000B52A3 /* TourScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +138,11 @@
 				B82F18FB1A8B29120041D5E6 /* IntroViewController.swift */,
 				B82F18FD1A8C82890041D5E6 /* SignInViewController.swift */,
 				B8AB7BD81A8DE469000B52A3 /* TourScrollViewController.swift */,
+				B888DD8C1A8EBC6E0078830A /* FeedScrollViewController.swift */,
+				B888DD8E1A8EC0200078830A /* SettingsScrollViewController.swift */,
+				B888DD901A8EC4E40078830A /* ConversationsViewController.swift */,
+				B81A5B031A9166CF000301FA /* FullScreenPhotoViewController.swift */,
+				B819A4251A9194E300130E53 /* CheckListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -232,10 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B819A4261A9194E300130E53 /* CheckListViewController.swift in Sources */,
 				B82F18DB1A8B26D00041D5E6 /* ViewController.swift in Sources */,
 				B8AB7BD91A8DE469000B52A3 /* TourScrollViewController.swift in Sources */,
 				B82F18F91A8B281A0041D5E6 /* Common.swift in Sources */,
 				B82F18D91A8B26D00041D5E6 /* AppDelegate.swift in Sources */,
+				B81A5B041A9166CF000301FA /* FullScreenPhotoViewController.swift in Sources */,
+				B888DD8F1A8EC0200078830A /* SettingsScrollViewController.swift in Sources */,
+				B888DD8D1A8EBC6E0078830A /* FeedScrollViewController.swift in Sources */,
+				B888DD911A8EC4E40078830A /* ConversationsViewController.swift in Sources */,
 				B82F18FE1A8C82890041D5E6 /* SignInViewController.swift in Sources */,
 				B82F18FC1A8B29120041D5E6 /* IntroViewController.swift in Sources */,
 			);

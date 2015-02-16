@@ -35,11 +35,13 @@ class TourScrollViewController: UIViewController, UIScrollViewDelegate {
         if(page == 3) {
             UIView.animateWithDuration(0.4, animations: {
                 self.buttonContainer.alpha = 1
+                self.pageControl.hidden = true
                 self.buttonContainer.transform = CGAffineTransformMakeTranslation(0, -2)
             })
         } else {
             UIView.animateWithDuration(0.4, animations: {
                 self.buttonContainer.alpha = 0
+                self.pageControl.hidden = false
                 self.buttonContainer.transform = CGAffineTransformMakeTranslation(0, 2)
             })
         }

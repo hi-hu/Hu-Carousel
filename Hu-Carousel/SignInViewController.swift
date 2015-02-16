@@ -28,7 +28,16 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
         // registering keyboard events
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
-
+        
+        UIView.animateWithDuration(0.6, animations: {
+            self.loginContainer.transform = CGAffineTransformMakeScale(0.4, 0.4)
+            self.loginContainer.alpha = 1
+            self.loginContainer.transform = CGAffineTransformMakeScale(1, 1)
+        })
+        
+        var swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
+        swipe.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipe)
     }
 
     override func didReceiveMemoryWarning() {
@@ -154,6 +163,11 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
             )
             alertView.show()
         }
+    }
+    
+    func dismissKeyboard() {
+        self.emailField.resignFirstResponder()
+        self.passwordField.resignFirstResponder()
     }
     
     /*
